@@ -1,0 +1,61 @@
+REPORT
+
+Introduction
+
+New York City’s demographics show that it is a large and ethnically diverse metropolis. It is the largest city in the United States with a long history of international immigration. New York City was home to nearly 8.5 million people in 2014, accounting for over 40% of the population of New York State and a slightly lower percentage of the New York metropolitan area, home to approximately 23.6 million. Over the last decade the city has been growing faster than the region. The New York region continues to be by far the leading metropolitan gateway for legal immigrants admitted into the United States.
+Throughout its history, New York City has been a major point of entry for immigrants; the term “melting pot” was coined to describe densely populated immigrant neighbourhoods on the Lower East Side. As many as 800 languages are spoken in New York, making it the most linguistically diverse city in the world. English remains the most widely spoken language, although there are areas in the outer boroughs in which up to 25% of people speak English as an alternate language, and/or have limited or no English language fluency. English is least spoken in neighbourhoods such as Flushing, Sunset Park, and Corona.
+With it’s diverse culture , comes diverse food items. There are many restaurants in New York City, each belonging to different categories like Chinese , Indian , French etc.
+So as part of this project , we will list and visualise all major parts of New York City that has great Indian restaurants.
+
+Data
+
+For this project we need the following data :
+New York City data that contains list Boroughs, Neighborhoods along with their latitude and longitude.
+Data source : https://cocl.us/new_york_dataset
+Description : This data set contains the required information. And we will use this data set to explore various neighborhoods of new york city.
+Indian resturants in each neighborhood of new york city.
+Data source : Fousquare API
+Description : By using this api we will get all the venues in each neighborhood. We can filter these venues to get only indian resturants.
+GeoSpace data
+Data source : https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm
+Description : By using this geo space data we will get the New york Borough boundaries that will help us visualize choropleth map.
+Approach
+Collect the new york city data from https://cocl.us/new_york_dataset
+Using FourSquare API we will find all venues for each neighborhood.
+Filter out all venues that are Indian Resturants.
+Find rating , tips and like count for each Indian Resturants using FourSquare API.
+Using rating for each resturant , we will sort that data.
+Visualize the Ranking of neighborhoods using folium library(python)
+Questions that can be asked using the above mentioned datasets
+What is best location in New York City for Indian Cuisine ?
+Which areas have potential Indian Resturant Market ?
+Which all areas lack Indian Resturants ?
+Which is the best place to stay if I prefer Indian Cuisine ?
+
+Analysis
+
+So I did the analysis and got exciting results. To see full code click here.
+Results
+We see that Queens has the highest number of Neighbourhoods.
+
+2. Also Queens has the highest number of Indian Restaurants.
+
+3. Floral Park in Queens has the highest number of Indian Restaurants with a total count of 9.
+
+4. Manhattan has the highest average rating for Indian Restaurants.
+
+5. Best neighbourhoods in New York that has highest average rating for Indian Restaurants.
+
+6. Borough Choropleth map based on average rating of Indian Restaurants.
+
+Conclusion
+
+Astoria(Queens), Blissville(Queens), Civic Center(Manhattan) are some of the best neighborhoods for indian cuisine.
+Manhattan have potential Indian Resturant Market/
+Staten Island ranks last in average rating of Indian Resturants.
+Manhattan is the best place to stay if you prefer Indian Cuisine.
+
+Limitations
+
+The ranking is purely on basis of rating of resturants
+The accuracy of data depends purely depends on the data provided by FourSquare
